@@ -82,7 +82,6 @@ class Dropdown extends Component {
         const parts = item.split(match[0], 2);
         return (
           <li
-            onKeyDown={this.handleEnter}
             tabIndex="0"
             onClick={() => this.suggestionSelected(item)}>
             {parts[0]}
@@ -93,7 +92,6 @@ class Dropdown extends Component {
       }
       return (
         <li
-          onKeyDown={this.handleEnter}
           tabIndex="0"
           onClick={() => this.suggestionSelected(item)}>
           {item}
