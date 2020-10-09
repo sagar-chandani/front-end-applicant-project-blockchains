@@ -1,4 +1,5 @@
 {
+  "homepage":"https://sagar-chandani.github.io/front-end-applicant-project-blockchains/",
   "name": "front-end-applicant-project",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +14,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "test": "jest --config ./src/jest.config.json"
+    "build":"react-scripts build",
+    "test": "jest --config ./src/jest.config.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +37,7 @@
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.10.4",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2"
+    "enzyme-adapter-react-16": "^1.15.2",
+    "gh-pages": "^3.1.0"
   }
 }
