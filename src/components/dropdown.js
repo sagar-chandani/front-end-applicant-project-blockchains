@@ -120,7 +120,7 @@ class Dropdown extends Component {
         <div className="show-color-in-circle" ref={this.colorRef} />
         <input
           tabIndex="0"
-          placeholder="Type your color here..."
+          placeholder="Search your color here..."
           value={text}
           onChange={this.onTextChanged}
           type="text"
