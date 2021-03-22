@@ -149,7 +149,8 @@ const colorsList = [
   "Wheat",
   "White",
   "WhiteSmoke",
-  "Yellow"
+  "Yellow",
+  "Sagar"
 ];
 
 ReactDOM.render(
